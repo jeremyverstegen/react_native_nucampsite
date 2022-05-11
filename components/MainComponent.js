@@ -29,7 +29,7 @@ const DirectoryNavigator = createStackNavigator(
 
 const HomeNavigator = createStackNavigator(
     {
-        Home: { screen: Home },
+        Home: { screen: Home }
     },
     {
         defaultNavigationOptions: {
