@@ -23,8 +23,9 @@ function RenderItem({item}) {
                     {item.description}
                 </Text>
             </Card>
-        )
+        );
     }
+    return <View />;
 }
 
 class Home extends Component {
@@ -34,7 +35,7 @@ class Home extends Component {
     }
 
     render() {
-        return(
+        return (
             <ScrollView>
                 <RenderItem
                     item={this.props.campsites.campsites.filter(campsite => campsite.featured)[0]} />

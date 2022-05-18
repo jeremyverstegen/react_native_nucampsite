@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { ScrollView, Text } from 'react-native';
+import { ScrollView, Text, FlatList } from 'react-native';
 import { Card, ListItem } from 'react-native-elements';
-import { FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
 
@@ -40,7 +39,7 @@ class About extends Component {
                 <ListItem
                     title={item.name}
                     subtitle={item.description}
-                    leftAvatar={{ source: {uri: baseUrl + item.image}}}
+                    leftAvatar={{source: {uri: baseUrl + item.image}}}
                 />   
             )
         }
